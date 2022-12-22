@@ -9,4 +9,6 @@ export default defineConfig({
 			external: ["svgo"],
 		},
 	},
+	site: 'https://miltonaguirre.github.io/',
+	base: '/'
 });
