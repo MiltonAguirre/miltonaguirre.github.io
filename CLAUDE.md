@@ -25,6 +25,7 @@ Single-page site aimed at recruiters and investors.
 - The hero name uses Anybody's variable width (`font-stretch`), set in the page's scoped `<style>`, with a single load animation that respects `prefers-reduced-motion`.
 - Icons come from `astro-icon` (`<Icon name="mdi:github" />`, Iconify prefixes). `astro.config.mjs` marks `svgo` as an SSR external, which `astro-icon` needs.
 - Static assets live in `public/`. The hero photo is `public/images/profile.webp` (resized from `profile.PNG`).
+- `src/components/DishioScreens.astro` shows real Dishio screenshots (light theme, sample data) from `public/images/dishio/`. Dishio's public site is https://dishio-app-ui.vercel.app/.
 
 Layouts are checked at mobile (390px), 1366×768 and 1920×1080. Headless Chrome clamps `--window-size` to a 500px minimum, so mobile screenshots need DevTools device emulation.
 

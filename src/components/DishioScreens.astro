@@ -1,0 +1,57 @@
+---
+// Real Dishio screens (light theme) from public/images/dishio/. They show sample data.
+const shot = "block h-auto w-full rounded-xl border-4 border-navy bg-white shadow-[0_24px_40px_-24px_rgb(14_27_77/0.55)]";
+const caption = "mt-3 text-[15px] leading-snug text-navy/80";
+---
+
+<div class="mt-16 grid gap-10 md:mt-20 md:grid-cols-[minmax(0,15rem)_1fr] md:items-end md:gap-8">
+  <figure class="mx-auto w-full max-w-[15rem] md:mx-0">
+    <img
+      src="/images/dishio/menu.webp"
+      width="720"
+      height="1558"
+      loading="lazy"
+      alt="Dishio on a phone: the menu of La Pizza Italiana for table 1, with pizzas, prices and Add buttons."
+      class={`${shot} rounded-[1.75rem] border-[6px]`}
+    />
+    <figcaption class={caption}>What the guest sees after scanning the table's QR.</figcaption>
+  </figure>
+  <figure>
+    <img
+      src="/images/dishio/kitchen.webp"
+      width="1800"
+      height="1125"
+      loading="lazy"
+      alt="Dishio kitchen board: orders in three columns, to prepare, preparing and ready to serve, plus a table calling for staff."
+      class={shot}
+    />
+    <figcaption class={caption}>The kitchen board. One tap moves an order to the next column.</figcaption>
+  </figure>
+</div>
+
+<div class="mt-10 grid gap-10 md:grid-cols-2 md:gap-8">
+  <figure>
+    <img
+      src="/images/dishio/orders.webp"
+      width="1800"
+      height="1125"
+      loading="lazy"
+      alt="Dishio orders panel: a cash payment waiting at the register, a table call, and order cards with their status."
+      class={shot}
+    />
+    <figcaption class={caption}>Orders arrive live, including cash payments to confirm at the register.</figcaption>
+  </figure>
+  <figure>
+    <img
+      src="/images/dishio/stats.webp"
+      width="1800"
+      height="1125"
+      loading="lazy"
+      alt="Dishio stats: total revenue, average ticket, top dishes and a chart of sales by hour."
+      class={shot}
+    />
+    <figcaption class={caption}>Sales stats per store, with peak hours and CSV export.</figcaption>
+  </figure>
+</div>
+
+<p class="mt-6 text-[13px] text-navy/60">Screens show sample data.</p>

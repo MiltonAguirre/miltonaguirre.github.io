@@ -1,14 +1,15 @@
 ---
 import { Icon } from "astro-icon";
 import Layout from "../layouts/main.astro";
-import DishioMockups from "../components/DishioMockups.astro";
+import DishioScreens from "../components/DishioScreens.astro";
 
 const email = "milton.aguirre92@gmail.com";
 const linkedin = "https://www.linkedin.com/in/milton-luis-aguirre/";
 const github = "https://github.com/MiltonAguirre";
+const dishioUrl = "https://dishio-app-ui.vercel.app/";
 
 const dishioSteps = [
-  { title: "See every menu", body: "Browse all the stores in the food court from one app." },
+  { title: "Scan the table's QR", body: "Every store in the food court shows up in one menu." },
   { title: "Order from the table", body: "Pick dishes from any store without standing in line." },
   { title: "Pay in the app", body: "Checkout runs through the built-in payment gateway." },
 ];
@@ -154,9 +155,21 @@ const projects = [
             them in one app: guests see every menu, order from their table and pay without getting up.
           </p>
           <p class="mt-4 max-w-prose text-lg leading-relaxed">
+            Each store gets a live panel: orders reach the counter and the kitchen instantly, tables can call
+            for staff, and sales stats show the busy hours.
+          </p>
+          <p class="mt-4 max-w-prose text-lg leading-relaxed">
             I founded Dishio and designed and developed the product myself, including the ordering flow and the
             payment gateway integration.
           </p>
+          <a
+            href={dishioUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 inline-flex rounded-full bg-navy px-5 py-3 font-semibold text-white transition-colors hover:bg-cobalt"
+          >
+            Visit Dishio
+          </a>
         </div>
 
         <ol class="grid content-start gap-8" aria-label="How Dishio works">
@@ -171,7 +184,7 @@ const projects = [
           ))}
         </ol>
       </div>
-      <DishioMockups />
+      <DishioScreens />
       </div>
     </section>
 
